@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="binatang" id="binatang" onclick="imageBinatang()" onmouseout="imageConfirmation()">
+        <option value="CR">C.Ronaldo</option>
+        <option value="O">Ozil</option>
+        <option value="B">Buffon</option>
+        <option value="B.f">B.Fernandes</option>
+        <option value="K">Kante</option>
+        <option value="S">M.Salah</option>
+    </select>
+    <div>
+        <img src="#" alt="" width="400px" id="hasil">
+    </div>
+    <script>
+        const hs = document.getElementById("hasil")
+const binatang = document.getElementById("binatang")
+function imageBinatang() {
+    if (binatang.value == "CR") {
+        return hs.src = "ronaldo.jpg"
+    } else if (binatang.value == "O") {
+        return hs.src = "ozil.jpg"
+    } else if (binatang.value == "B") {
+        return hs.src = "buffon.jpg"
+    } else if (binatang.value == "B.f") {
+        return hs.src = "bruno.jpg"
+    } else if (binatang.value == "K") {
+        return hs.src = "kante.jpeg"
+    } else {
+        return hs.src = "salah.jpg"
+    }
+}
+function imageConfirmation() {
+    alert(hs.src)
+}
+    </script>
+</body>
+</html>

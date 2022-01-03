@@ -1,0 +1,20 @@
+.legend{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+.fie{
+    background-image: url(dolus.jpg);
+    background-color: rgb(236, 182, 144);
+    border: double 10px;
+
+}
+.hitung{
+    border: double;
+}
+.input{
+    border: double;
+    background-color: rgb(202, 240, 255);
+}
+.hasil{
+    border: double 1em;
+}
